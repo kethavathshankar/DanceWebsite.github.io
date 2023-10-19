@@ -1,0 +1,73 @@
+
+//- index.pug
+doctype html
+html
+  head
+    title Shankar Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+       ul
+          div#logo
+              img(src="static/img/logo2.png")
+              | HDA
+
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Services] 
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Contact US]
+
+    section#introSection 
+           div Welcome to Shankar's Dance Academy 
+           div.small Eat Sleep Dance Repeat 
+
+    section#missionSection 
+            h2  Our Mission
+            div.card
+               h3 Dance Perfection
+               div.card-box 
+                   div.card-img
+                     img(src="static/img/m1.jpeg")
+
+                   div.card-content 
+                   p This is the best dance academy of the universe
+
+
+            div.card
+               h3 Dance the way you like
+               div.card-box 
+                   div.card-img
+                     img(src="static/img/m2.jpeg")
+
+                   div.card-content 
+                   p This is the best dance academy of the universe
+
+
+
+            div.card
+               h3 Expert Teaching 
+               div.card-box 
+                   div.card-img
+                     img(src="static/img/m3.png")
+
+                   div.card-content 
+                   p This is the best dance academy of the universe
+
+
+
+    section#sponsorSection 
+            h2  Our Sponsors 
+            div#sponsors
+               img(src="static/img/s1.jpeg", alt="Sponsor Image", Class="spImage")
+               img(src="static/img/s2.png", alt="Sponsor Image", Class="spImage")
+               img(src="static/img/s3.png", alt="Sponsor Image", Class="spImage")
+               img(src="static/img/s4.png", alt="Sponsor Image", Class="spImage")
+
+
+    footer#footer 
+             | Copyright © 2023 ShankarDanceAcademy.com | All rights reserv       
+
+    script
+      include ../static/index.js
